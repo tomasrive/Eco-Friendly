@@ -1,0 +1,111 @@
+.displayFlexLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(70, 78, 46);
+  z-index: 4;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid rgb(233, 229, 214);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(233, 229, 214) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gridColumnForm {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.columnNameLast {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+.divForm {
+  display: grid;
+  padding: 30px;
+}
+.formL {
+  align-items: center;
+  width: 700px;
+  height: 800px;
+  border: 10px solid rgb(233, 229, 214);
+  border-radius: 5px;
+  background: rgb(172, 185, 146);
+}
+.formL h1 {
+  padding-top: 25px;
+  color: rgb(70, 78, 46);
+}
+.form {
+  padding: 25px;
+  border: none;
+  border-bottom: 2px solid rgb(70, 78, 46);
+  background: none;
+  color: rgb(233, 229, 214);
+  transition: 1s;
+}
+.form::placeholder {
+  color: rgb(233, 229, 214);
+}
+
+.form:hover {
+  background: rgb(70, 78, 46, 0.4);
+  border-radius: 10px;
+}
+
+.containMaps {
+  width: 380px;
+  height: 520px;
+  background: rgb(70, 78, 46);
+  border-radius: 10px;
+}
+.rowsMaps {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  color: rgb(233, 229, 214);
+}
+
+.gridColumnMaps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  z-index: 1;
+}
