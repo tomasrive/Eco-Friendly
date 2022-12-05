@@ -1,5 +1,5 @@
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
 
@@ -50,7 +50,8 @@ body {
   margin: 15px;
 }
 .icon1 {
-  font-size: 20px;
+  width: 25px;
+  height: 25px;
 }
 .navbar {
   position: fixed;
@@ -370,13 +371,16 @@ video:hover {
   margin: 20px;
   padding: 15px;
   transition: 0.5s;
+  cursor: pointer;
 }
-
-.flechaA i,
-.flechaD i {
-  font-size: 30px;
+.flechaA {
+  transform: rotateY(180deg);
+}
+.flechaA img,
+.flechaD img {
+  width: 30px;
+  height: 30px;
   text-decoration: none;
-  color: rgb(233, 229, 214);
 }
 
 .flechaA:hover,
@@ -421,15 +425,13 @@ footer {
 
 svg {
   padding: 20px 20px 0 20px;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   transition: 0.5s;
 }
 
 svg:hover {
   transition: 0.8s;
-  width: 40px;
-  height: 40px;
   fill: rgb(70, 78, 46);
 }
 #map {
